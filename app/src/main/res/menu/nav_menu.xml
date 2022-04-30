@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Main Menu Navigation-->
+    <item
+        android:id="@+id/nav_home"
+        android:title="HOME | BOARD"
+        android:icon="@drawable/home"
+    />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="PROFILE"
+        android:icon="@drawable/profile_icon" />
+    <!--New Board Navigation-->
+    <item
+        android:id="@+id/nav_board"
+        android:title="ADD BOARD"
+        android:icon="@drawable/add_post" />
+
+    <!--Friends UI Navigation-->
+    <item
+        android:id="@+id/nav_cohorts"
+        android:title="COHORTS"
+        android:icon="@drawable/friends" />
+    <!--Find Friends UI Navigation-->
+    <item
+
+        android:id="@+id/nav_find_cohorts"
+        android:title="FIND COHORTS"
+        android:icon="@drawable/find_people"
+        />
+    <!--Messages UI Navigation-->
+    <item
+        android:id="@+id/nav_memorans"
+        android:title="MEMORANS"
+        android:icon="@drawable/messages"
+        />
+    <!--Settings Navigation-->
+    <item
+        android:id="@+id/nav_settings"
+        android:title="SETTINGS"
+        android:icon="@drawable/settings"
+        />
+    <!--Settings Navigation-->
+    <item
+        android:id="@+id/nav_logout"
+        android:title="LOGOUT"
+        android:icon="@drawable/logout"
+        />
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "859471276243",
+    "project_id": "vangaurdx-3fe04",
+    "storage_bucket": "vangaurdx-3fe04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859471276243:android:4b3e1c7a9728e6304f8c26",
+        "android_client_info": {
+          "package_name": "com.example.vangaurdx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859471276243-7p1qob5v24o4pjkbj2dmh65picvm538d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBokNfah7CtB55jzHODI-PCbB9hRAoyXmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859471276243-7p1qob5v24o4pjkbj2dmh65picvm538d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
