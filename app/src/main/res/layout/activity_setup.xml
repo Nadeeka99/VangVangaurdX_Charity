@@ -5,40 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/setupback1"
-    tools:context=".SetupActivity">
+    tools:context=".SetupActivity"
+    tools:ignore="ExtraText">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_user_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:src="@drawable/profile" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/set_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="254dp"
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/username"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="user name"
-        android:inputType="textMultiLine" />
+        android:hint=" user name "
+        android:inputType="textMultiLine"
+        android:padding="5dp" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine2"
+        android:id="@+id/set_fullname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/name"
         android:ems="10"
         android:gravity="start|top"
         android:hint="full name"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:padding="5dp" />
 
     <EditText
-        android:id="@+id/country"
+        android:id="@+id/set_country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -47,15 +56,36 @@
         android:ems="10"
         android:gravity="start|top"
         android:hint="country"
-        android:inputType="textMultiLine" />
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/country"
+        android:inputType="textMultiLine"
+        android:padding="5dp"/>
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
+    <Switch
+        android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="99dp"
-        android:layout_marginBottom="199dp"
-        android:text="ToggleButton" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/input"
+        android:padding="5dp"
+        android:text="Switch"
+        tools:text="Set Account Organization Admin"/>
+
+    <Button
+        android:id="@+id/set_data_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="141dp"
+        android:background="@drawable/button"
+        android:padding="8dp"
+        android:text="SAVE"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
 </RelativeLayout>
