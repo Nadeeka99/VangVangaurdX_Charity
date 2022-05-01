@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="114dp"
+        android:layout_height="126dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="219dp"
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+        android:hint="E-MAIL"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/purple_60"
+        android:textColorHint="@color/purple_10" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="332dp"
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:textColor="@color/purple_10"
+        android:textColorHint="@color/purple_10" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="273dp"
+        android:text="LOGIN"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/register_account_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="242dp"
+        android:text="Don't have an account,need new account ?"
+        android:textColor="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="201dp"
+        android:text="or Login With"
+        android:textColor="@color/teal_700" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="-189dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/facebook_signin_button"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/google"
+             />
+
+        <ImageView
+            android:id="@+id/twitter_signin_button"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+
+            android:id="@+id/google_signin_button"
+
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+
+            android:src="@drawable/facebook"/>
+
+    </LinearLayout>
+</RelativeLayout>

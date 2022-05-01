@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/Projects/VangaurdX/app/src/main/res/drawable/button.xml" value="0.1" />
         <entry key="..\:/Projects/VangaurdX/app/src/main/res/drawable/input.xml" value="0.1" />
-        <entry key="..\:/Projects/VangaurdX/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Projects/VangaurdX/app/src/main/res/layout/activity_register.xml" value="0.18819655521783182" />
+        <entry key="..\:/Projects/VangaurdX/app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="..\:/Projects/VangaurdX/app/src/main/res/layout/activity_main.xml" value="0.29775280898876405" />
+        <entry key="..\:/Projects/VangaurdX/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Projects/VangaurdX/app/src/main/res/layout/activity_setup.xml" value="0.25" />
         <entry key="..\:/Projects/VangaurdX/app/src/main/res/layout/app_bar_layout.xml" value="0.1" />
         <entry key="..\:/Projects/VangaurdX/app/src/main/res/layout/navigation_header.xml" value="0.18614130434782608" />
         <entry key="..\:/Projects/VangaurdX/app/src/main/res/menu/nav_menu.xml" value="0.22" />

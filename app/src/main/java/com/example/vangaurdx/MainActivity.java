@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +16,8 @@ import android.widget.Toast;
 //import android.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -23,12 +27,17 @@ public class MainActivity extends AppCompatActivity
     private Toolbar mToolbar;
     private ActionBarDrawerToggle actionBarDrawerToggle;
 
+    private FirebaseAuth mAuth;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mAuth =FirebaseAuth.getInstance();
 
         mToolbar = (Toolbar) findViewById(R.id.main_toolbar) ;
         setSupportActionBar(mToolbar);
@@ -52,6 +61,23 @@ public class MainActivity extends AppCompatActivity
                 return false;
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser currentUser= mAuth.getCurrentUser();
+        if (currentUser==null)
+        {
+            SendUserToLogin();
+        }
+    }
+
+    private void SendUserToLogin() {
+        Intent loginIntent =new Intent(MainActivity.this,LoginActivity.class);
+        loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(loginIntent);
+        finish();
     }
 
     @Override
