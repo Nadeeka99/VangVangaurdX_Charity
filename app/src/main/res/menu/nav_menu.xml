@@ -13,7 +13,7 @@
     <!--New Board Navigation-->
     <item
         android:id="@+id/nav_board"
-        android:title="ADD BOARD"
+        android:title="ADD TILES"
         android:icon="@drawable/add_post" />
 
     <!--Friends UI Navigation-->
